@@ -176,66 +176,150 @@
 
 // console.log(ages);
 
-const friends = ['Micheal', 'Steven', 'Peter'];
+// const friends = ['Micheal', 'Steven', 'Peter'];
 
-const newLength = friends.push('Jay');
+// const newLength = friends.push('Jay');
 
-console.log(newLength);
+// console.log(newLength);
 
-friends.unshift('John');
+// friends.unshift('John');
 
-console.log(friends);
+// console.log(friends);
 
-const popped = friends.pop();
-console.log(popped);
+// const popped = friends.pop();
+// console.log(popped);
 
-console.log(friends);
+// console.log(friends);
 
-const shifted = friends.shift();
-console.log(shifted);
+// const shifted = friends.shift();
+// console.log(shifted);
 
-console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Steven'));
 
-console.log(friends.includes('Bob'));
-
-
+// console.log(friends.includes('Bob'));
 
 
+// function calcTip(bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+// }
+// calcTip();
+
+// const bills = [125, 555, 44];
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+
+// console.log(tips);
+
+// const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+// console.log(total);
+
+
+// const total1 = bills[0] + tips[0];
+
+// const total2 = bills[1] + tips[1];
+
+// const total3 = bills[2] + tips[2];
+
+
+// Inro to Objects
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   age: 2037 - 1991,
+//   job: 'teacher',
+//   friends: ['Micheal', 'Peter', 'Steven']
+// };
+// console.log(jonas);
+
+// console.log(jonas.lastName);
+// console.log(jonas['lastName']);
+
+// const nameKey = 'Name';
+// console.log(jonas['first' + nameKey]);
+
+// console.log(jonas['last' + nameKey]);
+
+// const interestedIn = prompt('What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends');
+
+// console.log(jonas[interestedIn]);
+
+// if (jonas[interestedIn]) {
+//   console.log(jonas[interestedIn]);
+// } else {
+//   console.log('Invalid request! Choose between firstName, lastName, age, job, and friends please.');
+// }
+
+// jonas.location = 'Portugal';
+// jonas['twitter'] = '@jonasSmedtman';
+// console.log(jonas);
+
+// // Challenge that I nailed!!!
+
+// const jonasBestie = `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}.`;
+
+// console.log(jonasBestie);
 
 
 
+// Object Methods Overview
+
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   friends: ['Micheal', 'Peter', 'Steven'],
+//   hasDriversLicense: true,
+//   calcAge: function() {
+//     this.age = 2037 - this.birthYear;
+//     return this.age;
+//   },
+//   challenge: function() {
+//     return `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`
+//   }
+
+// };
+// jonas.calcAge();
+
+// console.log(jonas.challenge());
 
 
+// jonas.age;
+// console.log(jonas.age);
+// console.log(jonas.age);
 
+// Third challenge
 
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function() {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+}
+console.log(mark.calcBMI());
 
+const john = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function() {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+}
+console.log(john.calcBMI());
 
+if (mark.bmi > john.bmi) {
+  console.log(`${john.fullName} BMI ${john.bmi} is higher than ${mark.fullName} BMI ${mark.bmi}. `);
+} else {
+  console.log(`${mark.fullName} BMI ${mark.bmi} is higher than ${john.fullName} BMI ${john.bmi}. `);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Intro to Loops
 
 
 
