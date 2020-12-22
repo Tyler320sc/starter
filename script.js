@@ -444,15 +444,22 @@
    console.log(firstName);
 
     function printAge() {
-      const outPut = `${firstName} You are ${age}, born in ${birthYear}.`;
+      let outPut = `${firstName} You are ${age}, born in ${birthYear}.`;
       console.log(outPut);
 
         if (birthYear >= 1981 && birthYear <= 1996) {
           var millenial = true;
+          const firstName = 'Steven';
           const str = `Oh, and your a millenial, ${firstName}`;
           console.log(str);
+
+            function add(a, b) {
+              return a+b;
+            }
+            outPut = 'New output';
         }
         console.log(millenial);
+        console.log(add(2, 3));
     }
     printAge();
 
