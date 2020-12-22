@@ -437,7 +437,8 @@
 // console.log(calcAverage(totals));
 
 
-
+const add = a => a * 10;
+console.log(add(11));
 
  function calcAge(birthYear) {
    const age = 2037 - birthYear;
