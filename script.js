@@ -291,35 +291,194 @@
 
 // Third challenge
 
-const mark = {
-  fullName: 'Mark Miller',
-  mass: 78,
-  height: 1.69,
-  calcBMI: function() {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  }
-}
-console.log(mark.calcBMI());
+// const mark = {
+//   fullName: 'Mark Miller',
+//   mass: 78,
+//   height: 1.69,
+//   calcBMI: function() {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   }
+// }
+// console.log(mark.calcBMI());
 
-const john = {
-  fullName: 'John Smith',
-  mass: 92,
-  height: 1.95,
-  calcBMI: function() {
-    this.bmi = this.mass / this.height ** 2;
-    return this.bmi;
-  }
-}
-console.log(john.calcBMI());
+// const john = {
+//   fullName: 'John Smith',
+//   mass: 92,
+//   height: 1.95,
+//   calcBMI: function() {
+//     this.bmi = this.mass / this.height ** 2;
+//     return this.bmi;
+//   }
+// }
+// console.log(john.calcBMI());
 
-if (mark.bmi > john.bmi) {
-  console.log(`${john.fullName} BMI ${john.bmi} is higher than ${mark.fullName} BMI ${mark.bmi}. `);
-} else {
-  console.log(`${mark.fullName} BMI ${mark.bmi} is higher than ${john.fullName} BMI ${john.bmi}. `);
-}
+// if (mark.bmi > john.bmi) {
+//   console.log(`${john.fullName} BMI ${john.bmi} is higher than ${mark.fullName} BMI ${mark.bmi}. `);
+// } else {
+//   console.log(`${mark.fullName} BMI ${mark.bmi} is higher than ${john.fullName} BMI ${john.bmi}. `);
+// }
 
 // Intro to Loops
+
+
+// for (let i = 1; i <= 10; i ++) {
+//   console.log(`Lifting weights repetition ${i}`);
+// };
+
+
+// const jonasArr = ['Jonas', 'Scmedtmann', 2037 - 1991, 'teacher', ['Micheal', 'Peter', 'Steven'], true];
+
+// const types = [];
+
+// for (let i = 0; i < jonasArr.length; i++) {
+//   console.log(jonasArr[i], typeof jonasArr[i]);
+
+  // types[i] = typeof jonasArr[i];
+
+//   types.push(typeof jonasArr[i]);
+// }
+// console.log(types);
+
+// // Same as this above on ln 337
+
+// // types[0] = 'string';
+
+// const years = [1991, 2007, 1969, 2020];
+
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages);
+
+
+// console.log('ONLY STRINGS');
+
+// for (let i = 0; i < jonasArr.length; i++) {
+//   if ( typeof jonasArr[i] !== 'string') continue;
+//   console.log(jonasArr[i], typeof jonasArr[i]);
+// }
+
+
+// console.log('break statements');
+
+// for (let i = 0; i < jonasArr.length; i++) {
+//   if ( typeof jonasArr[i] === 'number') break;
+//   console.log(jonasArr[i], typeof jonasArr[i]);
+// }
+
+// for (let rep = 1; rep <= 10; i++) {
+//   console.log(`Lifting weights ${rep}`);
+// }
+
+// looping
+
+// const jonas = 
+// [
+//   'Jonas',
+//  'Schmedtmann',
+//   2037-1991,
+//  'teacher',
+//   ['Micheal',
+//   'Peter',
+//   'Steven']
+//   ];
+
+  // for (let rep = 1; rep <= 10; rep++) {
+  //   console.log(`Lifting weights ${rep}`);
+  // }
+
+// let rep = 1;
+
+// while (rep <= 10) {
+//   console.log(`Lifting weights ${rep}`);
+//   rep++;
+// }
+
+// While Loops
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+
+
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log('Loop is about to end...');
+// }
+
+// function calcTip(bill) {
+//   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2
+// }
+// calcTip();
+
+// const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+
+// const tips = [];
+
+// const totals = [];
+
+// for (let i = 0; i < bills.length; i++) {
+//   tips.push(calcTip(bills[i]));
+//   totals.push(bills[i] + tips[i]);
+// }
+
+// console.log(tips);
+// console.log(totals);
+
+// const calcAverage = arr => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+//   }
+//   return sum / arr.length;
+// }
+// console.log(calcAverage(totals));
+
+
+
+
+ function calcAge(birthYear) {
+   const age = 2037 - birthYear;
+   console.log(firstName);
+
+    function printAge() {
+      const outPut = `${firstName} You are ${age}, born in ${birthYear}.`;
+      console.log(outPut);
+
+        if (birthYear >= 1981 && birthYear <= 1996) {
+          var millenial = true;
+          const str = `Oh, and your a millenial, ${firstName}`;
+          console.log(str);
+        }
+        console.log(millenial);
+    }
+    printAge();
+
+   return age;
+
+  //  const myKid = `Joe`;
+ }
+
+const firstName = 'Jonas';
+calcAge(1991);
+// console.log(age);
+// console.log(myKid);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
